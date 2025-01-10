@@ -1,8 +1,9 @@
 package Foro.Hub.API.topico;
 
-public record DatosListadoTopico(String idUsuario,String mensaje,  String nombreCurso,String titulo ) {
+public record DatosListadoTopico(Long id, String idUsuario,String mensaje,  String nombreCurso,String titulo,String estado ) {
     public DatosListadoTopico(Topico topico) {
-        this(topico.getIdUsuario(),topico.getMensaje(),topico.getNombreCurso(),topico.getTitulo());
+        this(topico.getId(),topico.getIdUsuario(),topico.getMensaje(),topico.getNombreCurso(),topico.getTitulo(),
+                topico.getEstado().toString());
     }
 }
 

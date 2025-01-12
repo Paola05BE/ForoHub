@@ -1,4 +1,4 @@
-package Foro.Hub.API.topico;
+package Foro.Hub.API.domain.topico;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

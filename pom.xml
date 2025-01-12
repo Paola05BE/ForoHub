@@ -104,6 +104,21 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.flywaydb</groupId>
+				<artifactId>flyway-maven-plugin</artifactId>
+				<version>10.20.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>migrate</goal>
+							<goal>clean</goal>
+							<goal>repair</goal>
+							<goal>info</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>

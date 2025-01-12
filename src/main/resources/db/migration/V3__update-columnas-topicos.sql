@@ -1,5 +1,0 @@
-ALTER TABLE topicos
-MODIFY COLUMN id_usuario VARCHAR(100) NOT NULL,
-ADD CONSTRAINT unique_id_usuario UNIQUE (id_usuario);
-ALTER TABLE topicos
-MODIFY COLUMN nombre_curso VARCHAR(200) NOT NULL;

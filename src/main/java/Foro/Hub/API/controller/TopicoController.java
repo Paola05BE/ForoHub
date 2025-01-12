@@ -1,20 +1,17 @@
 package Foro.Hub.API.controller;
 
-import Foro.Hub.API.topico.*;
+import Foro.Hub.API.domain.topico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping("/topicos")
@@ -24,7 +21,7 @@ public class TopicoController {
 
     @PostMapping
     public ResponseEntity<DatosRespuestaTopico> registrarTopico(@RequestBody @Valid DatosRegistroTopico datosRegistroTopico,
-                                          UriComponentsBuilder uriComponentsBuilder) {
+                                                                UriComponentsBuilder uriComponentsBuilder) {
         Topico topico= topicoRepository.save(new Topico(datosRegistroTopico));
         DatosRespuestaTopico datosRespuestaTopico= new DatosRespuestaTopico
                 (topico.getId(),topico.getIdUsuario(),topico.getMensaje(),topico.getNombreCurso(),topico.getTitulo()

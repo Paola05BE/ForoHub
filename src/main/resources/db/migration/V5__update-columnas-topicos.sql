@@ -1,0 +1,7 @@
+ALTER TABLE topicos
+MODIFY COLUMN mensaje VARCHAR(200) NOT NULL,
+ADD CONSTRAINT unique_mensaje UNIQUE (mensaje);
+
+ALTER TABLE topicos
+MODIFY COLUMN titulo VARCHAR(100) NOT NULL,
+ADD CONSTRAINT unique_titulo UNIQUE (titulo);

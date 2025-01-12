@@ -1,8 +1,8 @@
 CREATE TABLE topicos (
   id BIGINT NOT NULL AUTO_INCREMENT,
-  idUsuario VARCHAR(20) NOT NULL UNIQUE,
+  id_usuario VARCHAR(20) NOT NULL,
   mensaje VARCHAR(200) NOT NULL,
-  nombreCurso VARCHAR(100) NOT NULL,
-  titulo VARCHAR(100) NOT NULL,
+  nombre_curso VARCHAR(200) NOT NULL,
+  titulo VARCHAR(200) NOT NULL,
   PRIMARY KEY (id)
 );

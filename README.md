@@ -43,7 +43,7 @@ Cuerpo de la solicitud:
  "estado":""
 }
 
-**2: Listar los Tópicos**
+** 2: Listar los Tópicos **
 
 Método: GET
 
@@ -64,7 +64,7 @@ Respuesta:
   ]
 
 
-**3: Editar un Tópico**
+** 3: Editar un Tópico **
 
 Método: PUT
 
@@ -79,19 +79,19 @@ Cuerpo de la solicitud:
 "estado": ""
 
 
-**4: Obtener Datos de un Tópico**
+** 4: Obtener Datos de un Tópico **
 
 Método: GET
 
 URL: http://localhost:8082/topicos/10'
 
-**5: Eliminar un Tópico**
+** 5: Eliminar un Tópico **
 
 Método: Delete
 URL: http://localhost:8082/topicos/id
 
 
-**6: Login de Usuario**
+** 6: Login de Usuario **
 
 Método: POST
 

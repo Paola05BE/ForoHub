@@ -102,13 +102,21 @@ URL: http://localhost:8082/login'
 {"jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"}
 
 # Tecnologías Utilizadas
+
 "Este proyecto utiliza las siguientes tecnologías:"
+
 "- **Java 19**: Lenguaje de programación utilizado."
+
 "- **Spring Boot 3.4.1**: Framework para el desarrollo de aplicaciones Java basado en Spring."
+
 "- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar los tópicos."
+
 "- **Hibernate (JPA)**: Framework ORM para la gestión de las entidades y la base de datos."
+
 "- **Flyway**: Herramienta para la migración de bases de datos."
+
 "- **JWT (JSON Web Token)**: Método de autenticación y autorización para asegurar el acceso a los endpoints de la API."
+
 "- **Lombok**: Biblioteca que simplifica el código mediante la generación automática de métodos como `getter`, `setter`, `toString`, entre otros."
 
 

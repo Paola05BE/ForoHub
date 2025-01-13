@@ -13,15 +13,15 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
 
 # Descripción de las operaciones del proyecto
 
-"- **Crear un nuevo tópico**: Permite crear un tópico."
+- **Crear un nuevo tópico**: Permite crear un tópico.
 
-"- **Mostrar todos los tópicos creados**: Obtiene una lista de todos los tópicos almacenados en la base de datos."
+- **Mostrar todos los tópicos creados**: Obtiene una lista de todos los tópicos almacenados en la base de datos.
 
-"- **Mostrar un tópico específico**: Permite ver la información detallada de un tópico."
+- **Mostrar un tópico específico**: Permite ver la información detallada de un tópico.
 
-"- **Actualizar un tópico**: Modifica los detalles de un tópico existente."
+- **Actualizar un tópico**: Modifica los detalles de un tópico existente.
 
-"- **Eliminar un tópico**: Elimina un tópico de la base de datos."
+- **Eliminar un tópico**: Elimina un tópico de la base de datos.
 
 "Además, cuenta con un sistema de autenticación con JWT para proteger el acceso a los servicios de la API."
 
@@ -29,8 +29,9 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
 # Ejemplos de Solicitudes en Insomnia
 # Ejemplo 1: Registrar un Tópico
 
-'Método: POST
-URL: http://localhost:8082/topicos'
+'Método: POST'
+
+'URL: http://localhost:8082/topicos'
 
 'Cuerpo de la solicitud:'
 
@@ -44,9 +45,11 @@ URL: http://localhost:8082/topicos'
 # Ejemplo 2: Listar los Tópicos
 
 'Método: GET
+
 URL: http://localhost:8082/topicos'
 
 'Respuesta:'
+
 {
 	"content": [
 		{
@@ -62,6 +65,7 @@ URL: http://localhost:8082/topicos'
 # Ejemplo 3: Editar un Tópico
 
 'Método: PUT
+
 URL: http://localhost:8082/topicos/id'
 
 
@@ -73,11 +77,15 @@ URL: http://localhost:8082/topicos/id'
 "estado": ""
 
 # Ejemplo 4: Obtener Datos de un Tópico
+
 Método: GET
+
 URL: http://localhost:8082/topicos/10'
 
 # Ejemplo 5: Login de Usuario
+
 'Método: POST
+
 
 URL: http://localhost:8082/login'
 

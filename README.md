@@ -135,34 +135,58 @@ server.port=8082
 
 # Configuración de la base de datos
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.datasource.url=jdbc:mysql://localhost:3306/forohub
+
 spring.datasource.username=${DB_USERNAME}
+
 spring.datasource.password=${DB_PASSWORDF}
 
+
 # Configuración de Hibernate
+
 logging.level.org.hibernate.SQL=DEBUG
+
 logging.level.org.hibernate.type.descriptor.sql=trace
+
 spring.jpa.properties.hibernate.format_sql=true
+
 spring.jpa.show-sql=true
 
+
 # Configuración de Flyway
+
 flyway.url=jdbc:mysql://localhost:3306/forohub?useSSL=false&serverTimezone=UTC
+
 flyway. User=${DB_USERNAME}
+
 flyway.password=${DB_PASSWORDF}
+
 flyway.locations=classpath:db/migration
 
+
 # Configuración de Flyway (alternativa)
+
 spring.flyway.url=jdbc:mysql://localhost:3306/forohub
+
 spring.flyway.user=${DB_USERNAME}
+
 spring.flyway.password=${DB_PASSWORDF}
 
+
 # Configuración de seguridad JWT
+
+
 api.security.secret=${JWT_SECRET}
 
 
+
 # Configuración de la base de datos
+
 
 Crea una base de datos en MySQL llamada `forohub` y configura el acceso mediante las variables de entorno para `DB_USERNAME`, `DB_PASSWORDF` y `JWT_SECRET`
 

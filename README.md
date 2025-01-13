@@ -98,6 +98,7 @@ URL: http://localhost:8082/login'
 
 
 'Ejemplo respuesta Token:'
+
 {"jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"}
 
 # Tecnologías Utilizadas

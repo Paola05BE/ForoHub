@@ -3,29 +3,37 @@
 ForoHub - API REST para Gestión de Tópicos
 
 # Descripción del Proyecto
-"ForoHub es una API RESTful diseñada para gestionar tópicos en un foro. 
-Permite realizar operaciones CRUD "
-"(crear, leer, actualizar, eliminar) sobre los tópicos, con autenticación segura mediante JWT"
-"Este proyecto fue desarrollado como parte del Alura Challenge Back End y tiene como objetivo facilitar la "
-"gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de interactuar con los tópicos."
+ForoHub es una API RESTful diseñada para gestionar tópicos en un foro. 
+Permite realizar operaciones CRUD 
+(crear, leer, actualizar, eliminar) sobre los tópicos, con autenticación segura mediante JWT
+Este proyecto fue desarrollado como parte del Alura Challenge Back End y tiene como objetivo facilitar la 
+gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de interactuar con los tópicos.
 
 
 # Descripción de las operaciones del proyecto
 
-"- **Crear un nuevo tópico**: Permite crear un tópico.\n"
-"- **Mostrar todos los tópicos creados**: Obtiene una lista de todos los tópicos almacenados en la base de datos.\n"
-"- **Mostrar un tópico específico**: Permite ver la información detallada de un tópico.\n"
-"- **Actualizar un tópico**: Modifica los detalles de un tópico existente.\n"
-"- **Eliminar un tópico**: Elimina un tópico de la base de datos.\n\n"
+"- **Crear un nuevo tópico**: Permite crear un tópico."
+
+"- **Mostrar todos los tópicos creados**: Obtiene una lista de todos los tópicos almacenados en la base de datos."
+
+"- **Mostrar un tópico específico**: Permite ver la información detallada de un tópico."
+
+"- **Actualizar un tópico**: Modifica los detalles de un tópico existente."
+
+"- **Eliminar un tópico**: Elimina un tópico de la base de datos."
+
 "Además, cuenta con un sistema de autenticación con JWT para proteger el acceso a los servicios de la API."
 
 
 # Ejemplos de Solicitudes en Insomnia
 # Ejemplo 1: Registrar un Tópico
-'Método: POST\nURL: http://localhost:8082/topicos'
 
-'Cuerpo de la solicitud:\n'
-'{\n'
+'Método: POST
+URL: http://localhost:8082/topicos'
+
+'Cuerpo de la solicitud:
+
+'{
 '  "idUsuario": "",\n'
 '  "mensaje": "",\n'
 '  "nombreCurso": "",\n'
@@ -36,15 +44,15 @@ Permite realizar operaciones CRUD "
 # Ejemplo 2: Listar los Tópicos
 
 'Método: GET\nURL: http://localhost:8082/topicos'
-'Respuesta:\n'
-'{\n'
+'Respuesta:'
+'{
 '  "id": ,\n'
-'  "idUsuario": "",\n'
-'  "mensaje": "",\n'
-'  "nombreCurso": "",\n'
-'  "titulo": "",\n'
-'  "estado": ""\n'
-'}'
+'  "idUsuario": "",'
+'  "mensaje": "",'
+'  "nombreCurso": "",'
+'  "titulo": "",'
+'  "estado": ""
+}'
 
 # Ejemplo 3: Editar un Tópico
 

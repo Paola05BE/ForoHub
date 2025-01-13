@@ -3,7 +3,8 @@
 ForoHub - API REST para Gestión de Tópicos
 
 # Descripción del Proyecto
-"ForoHub es una API RESTful diseñada para gestionar tópicos en un foro. Permite realizar operaciones CRUD "
+"ForoHub es una API RESTful diseñada para gestionar tópicos en un foro. 
+Permite realizar operaciones CRUD "
 "(crear, leer, actualizar, eliminar) sobre los tópicos, con autenticación segura mediante JWT"
 "Este proyecto fue desarrollado como parte del Alura Challenge Back End y tiene como objetivo facilitar la "
 "gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de interactuar con los tópicos."
@@ -21,9 +22,8 @@ ForoHub - API REST para Gestión de Tópicos
 
 # Ejemplos de Solicitudes en Insomnia
 # Ejemplo 1: Registrar un Tópico
-doc.add_heading('1. Registrar un Tópico', level=3)
-doc.add_paragraph('Método: POST\nURL: http://localhost:8082/topicos')
-doc.add_paragraph(
+'Método: POST\nURL: http://localhost:8082/topicos'
+
 'Cuerpo de la solicitud:\n'
 '{\n'
 '  "idUsuario": "",\n'
@@ -32,12 +32,10 @@ doc.add_paragraph(
 '  "titulo": "",\n'
 '  "estado": ""\n'
 '}'
-)
 
 # Ejemplo 2: Listar los Tópicos
-doc.add_heading('2. Listar los Tópicos', level=3)
-doc.add_paragraph('Método: GET\nURL: http://localhost:8082/topicos')
-doc.add_paragraph(
+
+'Método: GET\nURL: http://localhost:8082/topicos'
 'Respuesta:\n'
 '{\n'
 '  "id": ,\n'
@@ -47,45 +45,38 @@ doc.add_paragraph(
 '  "titulo": "",\n'
 '  "estado": ""\n'
 '}'
-)
 
 # Ejemplo 3: Editar un Tópico
-doc.add_heading('3. Editar Tópico', level=3)
-doc.add_paragraph('Método: PUT\nURL: http://localhost:8082/topicos/10')
-doc.add_paragraph(
+
+'Método: PUT\nURL: http://localhost:8082/topicos/id'
+
 'Cuerpo de la solicitud:\n'
-'{\n'
+
 '  "mensaje": "",\n'
 '  "nombreCurso": "",\n'
 '  "titulo": "",\n'
 '  "estado": ""\n'
-'}'
-)
 
 # Ejemplo 4: Obtener Datos de un Tópico
-doc.add_heading('4. Obtener Datos de un Tópico', level=3)
-doc.add_paragraph('Método: GET\nURL: http://localhost:8082/topicos/10')
+Método: GET\nURL: http://localhost:8082/topicos/10'
 
 # Ejemplo 5: Login de Usuario
-doc.add_heading('5. Login de Usuario', level=3)
-doc.add_paragraph('Método: POST\nURL: http://localhost:8082/login')
-doc.add_paragraph(
+'Método: POST\nURL: http://localhost:8082/login'
 'Cuerpo de la solicitud:\n'
 '{\n'
 '  "login": "",\n'
 '  "clave": ""\n'
 '}'
-)
-doc.add_paragraph(
+
+
+
 'Ejemplo respuesta Token:\n'
 '{\n'
+
 '  "jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"\n'
 '}'
-)
 
 # Tecnologías Utilizadas
-doc.add_heading('Tecnologías Utilizadas', level=1)
-doc.add_paragraph(
 "Este proyecto utiliza las siguientes tecnologías:\n"
 "- **Java 19**: Lenguaje de programación utilizado.\n"
 "- **Spring Boot 3.4.1**: Framework para el desarrollo de aplicaciones Java basado en Spring.\n"
@@ -94,20 +85,18 @@ doc.add_paragraph(
 "- **Flyway**: Herramienta para la migración de bases de datos.\n"
 "- **JWT (JSON Web Token)**: Método de autenticación y autorización para asegurar el acceso a los endpoints de la API.\n"
 "- **Lombok**: Biblioteca que simplifica el código mediante la generación automática de métodos como `getter`, `setter`, `toString`, entre otros."
-)
+
 
 # Configuración del Entorno
-doc.add_heading('Configuración del Entorno', level=1)
-doc.add_paragraph(
-"1. Clona el repositorio:\n"
+
+"1. Clona el repositorio:"
 "   ```bash\n"
     "   git clone https://github.com/Paola05BE/ForoHub.git\n"
-    "   ```\n\n"
-"2. Configuración del archivo `application.properties`:\n"
-"   En el archivo `application.properties`, configura los siguientes parámetros:\n"
-)
+    
+"2. Configuración del archivo `application.properties`:
+   En el archivo `application.properties`, configura los siguientes parámetros:
 
-doc.add_paragraph(
+
 '''spring.application.name=API
 server.port=8082
 
@@ -138,17 +127,10 @@ spring.flyway.password=${DB_PASSWORDF}
 
 # Configuración de seguridad JWT
 api.security.secret=${JWT_SECRET}
-'''
-)
 
-# Agregar la sección de la base de datos
-doc.add_paragraph(
-"3. Configuración de la base de datos:\n"
-"   Crea una base de datos en MySQL llamada `forohub` y configura el acceso mediante las variables de entorno para `DB_USERNAME`, `DB_PASSWORDF` y `JWT_SECRET`."
-)
 
-# Guardar el archivo .docx
-output_path = '/mnt/data/ForoHub_README.docx'
-doc.save(output_path)
+# Configuración de la base de datos
 
-output_path  # Ruta al archivo generado
+Crea una base de datos en MySQL llamada `forohub` y configura el acceso mediante las variables de entorno para `DB_USERNAME`, `DB_PASSWORDF` y `JWT_SECRET`
+
+

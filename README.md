@@ -35,10 +35,10 @@ URL: http://localhost:8082/topicos'
 'Cuerpo de la solicitud:'
 
 {"idUsuario":"32",
- "mensaje":"Prueba  nuevo test",
-	"nombreCurso":"SpringBoot nuevo",
- "titulo":"Error en el  propertie nuevo",
- "estado":"abierto"
+ "mensaje":"",
+"nombreCurso":"",
+ "titulo":"",
+ "estado":""
 }
 
 # Ejemplo 2: Listar los Tópicos
@@ -50,12 +50,12 @@ URL: http://localhost:8082/topicos'
 {
 	"content": [
 		{
-			"id": 18,
-			"idUsuario": "212",
-			"mensaje": "Prueba registros controller",
-			"nombreCurso": "SpringBoot Alura.",
-			"titulo": "Error en el controller properties...",
-			"estado": "abierto"
+			"id": ,
+			"idUsuario": "",
+			"mensaje": "",
+			"nombreCurso": "",
+			"titulo": "",
+			"estado": ""
 		}
   ]
 

@@ -142,8 +142,8 @@ Este proyecto utiliza las siguientes tecnologías:
 # Configuración del Entorno
 
 "1. Clona el repositorio:"
-"   ```bash\n"
-    "   git clone https://github.com/Paola05BE/ForoHub.git\n"
+"   ```bash"
+    " git clone https://github.com/Paola05BE/ForoHub.git"
     
 "2. Configuración del archivo `application.properties`:
    En el archivo `application.properties`, configura los siguientes parámetros:

@@ -86,8 +86,13 @@ Método: GET
 
 URL: http://localhost:8082/topicos/10'
 
+5: Eliminar un Tópico
 
-5: Login de Usuario
+Método: Delete
+URL: http://localhost:8082/topicos/id
+
+
+6: Login de Usuario
 
 'Método: POST
 

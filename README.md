@@ -46,7 +46,9 @@ URL: http://localhost:8082/topicos'
 
 'Método: GET
 URL: http://localhost:8082/topicos'
+
 'Respuesta:'
+
 '{
 '  "id": ,'
 '  "idUsuario": "",'
@@ -61,7 +63,8 @@ URL: http://localhost:8082/topicos'
 'Método: PUT
 URL: http://localhost:8082/topicos/id'
 
-'Cuerpo de la solicitud:\n'
+
+'Cuerpo de la solicitud:'
 
 '  "mensaje": "",'
 '  "nombreCurso": "",'
@@ -74,13 +77,15 @@ URL: http://localhost:8082/topicos/10'
 
 # Ejemplo 5: Login de Usuario
 'Método: POST
+
 URL: http://localhost:8082/login'
+
 'Cuerpo de la solicitud:'
+
 '{'
 '  "login": "",'
 '  "clave": ""'
 '}'
-
 
 
 'Ejemplo respuesta Token:'

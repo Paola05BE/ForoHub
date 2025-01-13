@@ -6,6 +6,7 @@ ForoHub - API REST para Gestión de Tópicos
 ForoHub es una API RESTful diseñada para gestionar tópicos en un foro. 
 Permite realizar operaciones CRUD 
 (crear, leer, actualizar, eliminar) sobre los tópicos, con autenticación segura mediante JWT
+
 Este proyecto fue desarrollado como parte del Alura Challenge Back End y tiene como objetivo facilitar la 
 gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de interactuar con los tópicos.
 

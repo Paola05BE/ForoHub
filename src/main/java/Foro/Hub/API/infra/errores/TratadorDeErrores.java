@@ -1,4 +1,4 @@
-package Foro.Hub.API.infra;
+package Foro.Hub.API.infra.errores;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;

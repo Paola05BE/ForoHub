@@ -103,21 +103,21 @@ URL: http://localhost:8082/login'
 
 # Tecnologías Utilizadas
 
-"Este proyecto utiliza las siguientes tecnologías:"
+Este proyecto utiliza las siguientes tecnologías:
 
-"- **Java 19**: Lenguaje de programación utilizado."
+- **Java 19**: Lenguaje de programación utilizado.
 
-"- **Spring Boot 3.4.1**: Framework para el desarrollo de aplicaciones Java basado en Spring."
+- **Spring Boot 3.4.1**: Framework para el desarrollo de aplicaciones Java basado en Spring.
 
-"- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar los tópicos."
+- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar los tópicos.
 
-"- **Hibernate (JPA)**: Framework ORM para la gestión de las entidades y la base de datos."
+- **Hibernate (JPA)**: Framework ORM para la gestión de las entidades y la base de datos.
 
-"- **Flyway**: Herramienta para la migración de bases de datos."
+- **Flyway**: Herramienta para la migración de bases de datos.
 
-"- **JWT (JSON Web Token)**: Método de autenticación y autorización para asegurar el acceso a los endpoints de la API."
+- **JWT (JSON Web Token)**: Método de autenticación y autorización para asegurar el acceso a los endpoints de la API.
 
-"- **Lombok**: Biblioteca que simplifica el código mediante la generación automática de métodos como `getter`, `setter`, `toString`, entre otros."
+- **Lombok**: Biblioteca que simplifica el código mediante la generación automática de métodos como `getter`, `setter`, `toString`, entre otros.
 
 
 # Configuración del Entorno
@@ -162,20 +162,18 @@ spring.jpa.show-sql=true
 
 flyway.url=jdbc:mysql://localhost:3306/forohub?useSSL=false&serverTimezone=UTC
 
-flyway. User=${DB_USERNAME}
+flyway.user=${DB_USERNAME}
 
 flyway.password=${DB_PASSWORDF}
 
 flyway.locations=classpath:db/migration
-
-
-# Configuración de Flyway (alternativa)
 
 spring.flyway.url=jdbc:mysql://localhost:3306/forohub
 
 spring.flyway.user=${DB_USERNAME}
 
 spring.flyway.password=${DB_PASSWORDF}
+
 
 
 # Configuración de seguridad JWT

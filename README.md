@@ -34,13 +34,12 @@ URL: http://localhost:8082/topicos'
 
 'Cuerpo de la solicitud:'
 
-'{
-'  "idUsuario": "",'
-'  "mensaje": "",'
-'  "nombreCurso": "",'
-'  "titulo": "",'
-'  "estado": ""'
-'}'
+{"idUsuario":"32",
+ "mensaje":"Prueba  nuevo test",
+	"nombreCurso":"SpringBoot nuevo",
+ "titulo":"Error en el  propertie nuevo",
+ "estado":"abierto"
+}
 
 # Ejemplo 2: Listar los Tópicos
 
@@ -48,15 +47,17 @@ URL: http://localhost:8082/topicos'
 URL: http://localhost:8082/topicos'
 
 'Respuesta:'
-
-'{
-'  "id": ,'
-'  "idUsuario": "",'
-'  "mensaje": "",'
-'  "nombreCurso": "",'
-'  "titulo": "",'
-'  "estado": ""
-}'
+{
+	"content": [
+		{
+			"id": 18,
+			"idUsuario": "212",
+			"mensaje": "Prueba registros controller",
+			"nombreCurso": "SpringBoot Alura.",
+			"titulo": "Error en el controller properties...",
+			"estado": "abierto"
+		}
+  ]
 
 # Ejemplo 3: Editar un Tópico
 
@@ -66,10 +67,10 @@ URL: http://localhost:8082/topicos/id'
 
 'Cuerpo de la solicitud:'
 
-'  "mensaje": "",'
-'  "nombreCurso": "",'
-'  "titulo": "",'
-'  "estado": ""'
+ "mensaje": "",
+ "nombreCurso": "",
+"titulo": "",
+"estado": ""
 
 # Ejemplo 4: Obtener Datos de un Tópico
 Método: GET
@@ -82,17 +83,14 @@ URL: http://localhost:8082/login'
 
 'Cuerpo de la solicitud:'
 
-'{'
-'  "login": "",'
-'  "clave": ""'
-'}'
+{
+ "login": "",
+ "clave": ""
+ }
 
 
 'Ejemplo respuesta Token:'
-'{'
-
-'  "jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"'
-'}'
+{"jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"}
 
 # Tecnologías Utilizadas
 "Este proyecto utiliza las siguientes tecnologías:"

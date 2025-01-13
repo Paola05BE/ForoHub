@@ -27,7 +27,8 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
 
 
 # Ejemplos de Solicitudes en Insomnia
-# Ejemplo 1: Registrar un Tópico
+
+1: Registrar un Tópico
 
 'Método: POST'
 
@@ -42,7 +43,7 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
  "estado":""
 }
 
-# Ejemplo 2: Listar los Tópicos
+2: Listar los Tópicos
 
 'Método: GET
 
@@ -62,7 +63,8 @@ URL: http://localhost:8082/topicos'
 		}
   ]
 
-# Ejemplo 3: Editar un Tópico
+
+3: Editar un Tópico
 
 'Método: PUT
 
@@ -76,13 +78,16 @@ URL: http://localhost:8082/topicos/id'
 "titulo": "",
 "estado": ""
 
-# Ejemplo 4: Obtener Datos de un Tópico
+
+4: Obtener Datos de un Tópico
+
 
 Método: GET
 
 URL: http://localhost:8082/topicos/10'
 
-# Ejemplo 5: Login de Usuario
+
+5: Login de Usuario
 
 'Método: POST
 

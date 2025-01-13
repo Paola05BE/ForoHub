@@ -31,22 +31,23 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
 'Método: POST
 URL: http://localhost:8082/topicos'
 
-'Cuerpo de la solicitud:
+'Cuerpo de la solicitud:'
 
 '{
-'  "idUsuario": "",\n'
-'  "mensaje": "",\n'
-'  "nombreCurso": "",\n'
-'  "titulo": "",\n'
-'  "estado": ""\n'
+'  "idUsuario": "",'
+'  "mensaje": "",'
+'  "nombreCurso": "",'
+'  "titulo": "",'
+'  "estado": ""'
 '}'
 
 # Ejemplo 2: Listar los Tópicos
 
-'Método: GET\nURL: http://localhost:8082/topicos'
+'Método: GET
+URL: http://localhost:8082/topicos'
 'Respuesta:'
 '{
-'  "id": ,\n'
+'  "id": ,'
 '  "idUsuario": "",'
 '  "mensaje": "",'
 '  "nombreCurso": "",'
@@ -56,42 +57,45 @@ URL: http://localhost:8082/topicos'
 
 # Ejemplo 3: Editar un Tópico
 
-'Método: PUT\nURL: http://localhost:8082/topicos/id'
+'Método: PUT
+URL: http://localhost:8082/topicos/id'
 
 'Cuerpo de la solicitud:\n'
 
-'  "mensaje": "",\n'
-'  "nombreCurso": "",\n'
-'  "titulo": "",\n'
-'  "estado": ""\n'
+'  "mensaje": "",'
+'  "nombreCurso": "",'
+'  "titulo": "",'
+'  "estado": ""'
 
 # Ejemplo 4: Obtener Datos de un Tópico
-Método: GET\nURL: http://localhost:8082/topicos/10'
+Método: GET
+URL: http://localhost:8082/topicos/10'
 
 # Ejemplo 5: Login de Usuario
-'Método: POST\nURL: http://localhost:8082/login'
-'Cuerpo de la solicitud:\n'
-'{\n'
-'  "login": "",\n'
-'  "clave": ""\n'
+'Método: POST
+URL: http://localhost:8082/login'
+'Cuerpo de la solicitud:'
+'{'
+'  "login": "",'
+'  "clave": ""'
 '}'
 
 
 
-'Ejemplo respuesta Token:\n'
-'{\n'
+'Ejemplo respuesta Token:'
+'{'
 
-'  "jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"\n'
+'  "jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"'
 '}'
 
 # Tecnologías Utilizadas
-"Este proyecto utiliza las siguientes tecnologías:\n"
-"- **Java 19**: Lenguaje de programación utilizado.\n"
-"- **Spring Boot 3.4.1**: Framework para el desarrollo de aplicaciones Java basado en Spring.\n"
-"- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar los tópicos.\n"
-"- **Hibernate (JPA)**: Framework ORM para la gestión de las entidades y la base de datos.\n"
-"- **Flyway**: Herramienta para la migración de bases de datos.\n"
-"- **JWT (JSON Web Token)**: Método de autenticación y autorización para asegurar el acceso a los endpoints de la API.\n"
+"Este proyecto utiliza las siguientes tecnologías:"
+"- **Java 19**: Lenguaje de programación utilizado."
+"- **Spring Boot 3.4.1**: Framework para el desarrollo de aplicaciones Java basado en Spring."
+"- **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar los tópicos."
+"- **Hibernate (JPA)**: Framework ORM para la gestión de las entidades y la base de datos."
+"- **Flyway**: Herramienta para la migración de bases de datos."
+"- **JWT (JSON Web Token)**: Método de autenticación y autorización para asegurar el acceso a los endpoints de la API."
 "- **Lombok**: Biblioteca que simplifica el código mediante la generación automática de métodos como `getter`, `setter`, `toString`, entre otros."
 
 

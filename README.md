@@ -28,6 +28,7 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
 
 # Ejemplos de Solicitudes en Insomnia
 
+
 ** 1: Registrar un Tópico **
 
 Método: POST
@@ -42,6 +43,8 @@ Cuerpo de la solicitud:
  "titulo":"",
  "estado":""
 }
+
+
 
 ** 2: Listar los Tópicos **
 
@@ -64,6 +67,8 @@ Respuesta:
   ]
 
 
+
+
 ** 3: Editar un Tópico **
 
 Método: PUT
@@ -79,16 +84,22 @@ Cuerpo de la solicitud:
 "estado": ""
 
 
+
+
 ** 4: Obtener Datos de un Tópico **
 
 Método: GET
 
 URL: http://localhost:8082/topicos/10'
 
+
+
 ** 5: Eliminar un Tópico **
 
 Método: Delete
 URL: http://localhost:8082/topicos/id
+
+
 
 
 ** 6: Login de Usuario **

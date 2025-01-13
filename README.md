@@ -28,13 +28,13 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
 
 # Ejemplos de Solicitudes en Insomnia
 
-1: Registrar un Tópico
+** 1: Registrar un Tópico **
 
-'Método: POST'
+Método: POST
 
-'URL: http://localhost:8082/topicos'
+URL: http://localhost:8082/topicos
 
-'Cuerpo de la solicitud:'
+Cuerpo de la solicitud:
 
 {"idUsuario":"32",
  "mensaje":"",
@@ -43,13 +43,13 @@ gestión de temas dentro de un foro, brindando a los usuarios la posibilidad de 
  "estado":""
 }
 
-2: Listar los Tópicos
+**2: Listar los Tópicos**
 
-'Método: GET
+Método: GET
 
-URL: http://localhost:8082/topicos'
+URL: http://localhost:8082/topicos
 
-'Respuesta:'
+Respuesta:
 
 {
 	"content": [
@@ -64,14 +64,14 @@ URL: http://localhost:8082/topicos'
   ]
 
 
-3: Editar un Tópico
+**3: Editar un Tópico**
 
-'Método: PUT
+Método: PUT
 
-URL: http://localhost:8082/topicos/id'
+URL: http://localhost:8082/topicos/id
 
 
-'Cuerpo de la solicitud:'
+Cuerpo de la solicitud:
 
  "mensaje": "",
  "nombreCurso": "",
@@ -79,27 +79,25 @@ URL: http://localhost:8082/topicos/id'
 "estado": ""
 
 
-4: Obtener Datos de un Tópico
-
+**4: Obtener Datos de un Tópico**
 
 Método: GET
 
 URL: http://localhost:8082/topicos/10'
 
-5: Eliminar un Tópico
+**5: Eliminar un Tópico**
 
 Método: Delete
 URL: http://localhost:8082/topicos/id
 
 
-6: Login de Usuario
+**6: Login de Usuario**
 
-'Método: POST
+Método: POST
 
+URL: http://localhost:8082/login
 
-URL: http://localhost:8082/login'
-
-'Cuerpo de la solicitud:'
+Cuerpo de la solicitud:
 
 {
  "login": "",
@@ -107,7 +105,7 @@ URL: http://localhost:8082/login'
  }
 
 
-'Ejemplo respuesta Token:'
+Ejemplo respuesta Token:
 
 {"jwTtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvaHViIiwic3ViIjoic3BiZXRhbiIsImlkIjoxLCJleHAiOjE3MzY3Mjc3OTR9.DISNCjlXCFLRZisiC9thbPJwkKcrP0Y2-f54cLVHZdo"}
 

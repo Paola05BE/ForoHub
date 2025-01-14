@@ -19,19 +19,21 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration {
     @Autowired
     private SecurityFilter securityFilter;
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, SecurityFilter securityFilter) throws Exception {
         return httpSecurity
                 .csrf(csrf -> csrf.disable()) // Deshabilita CSRF
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Configuración stateless
-                .authorizeHttpRequests(auth ->
-                        auth.requestMatchers(HttpMethod.POST, "/login").permitAll() // Permitir "/login" sin autenticación
-                                .anyRequest().authenticated()) // Todas las demás rutas requieren autenticación
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(HttpMethod.POST, "/login").permitAll() // Permitir "/login" sin autenticación
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll() // Permitir Swagger sin autenticación
+                        .anyRequest().authenticated() // Todas las demás rutas requieren autenticación
+                )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class) // Agregar el filtro antes del UsernamePasswordAuthenticationFilter
                 .build();
     }
+
     @Bean
     public AuthenticationManager authenticationManager
             (AuthenticationConfiguration authenticationConfiguration) throws Exception {
